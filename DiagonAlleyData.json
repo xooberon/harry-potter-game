@@ -1,0 +1,138 @@
+{
+    "Eeylop's Owl Emporium": {
+        "inventory": [
+            {
+                "name": "Snowy Owl",
+                "price": 7395
+            },
+            {
+                "name": "Tawny Owl",
+                "price": 4930
+            },
+            {
+                "name": "Screech Owl",
+                "price": 7395
+            },
+            {
+                "name": "Barn Owl",
+                "price": 4930
+            },
+            {
+                "name": "Brown Owl",
+                "price": 4930
+            }
+        ]
+    },
+    "Florean Fortescue's Ice Cream Parlour": {
+        "inventory": [
+            {
+                "name": "ice cream",
+                "price": 50
+            }
+        ]
+    },
+    "Flourish & Blotts": {
+        "inventory": [
+            {
+                "name": "Quill",
+                "price": 1000
+            }
+        ]
+    },
+    "Gambol and Japes": {
+        "inventory": [
+            {
+                "name": "Firework",
+                "price": 2000
+            }
+        ]
+    },
+    "Gringotts Wizarding Bank": {
+        "inventory": [
+            {
+                "name": "wallet",
+                "price": 2000
+            }
+        ]
+    },
+    "The Leaky Cauldron": {
+        "inventory": [
+            {
+                "name": "beer",
+                "price": 2000
+            }
+        ]
+    },
+    "Madam Malkin's Robes for All Occasions": {
+        "inventory": [
+            {
+                "name": "robe",
+                "price": 2000
+            }
+        ]
+    },
+    "Magical Menagerie": {
+        "inventory": [
+            {
+                "name": "cat",
+                "price": 2000
+            }
+        ]
+    },
+    "Ollivanders": {
+        "inventory": [
+            {
+                "name": "wand",
+                "price": 5000
+            }
+        ]
+    },
+    "Potage's Cauldron Shop": {
+        "inventory": [
+            {
+                "name": "cauldron",
+                "price": 2000
+            }
+        ]
+    },
+    "Quality Quidditch Supplies": {
+        "inventory": [
+            {
+                "name": "broomstick",
+                "price": 5000
+            }
+        ]
+    },
+    "Slug and Jiggers Apothecary": {
+        "inventory": [
+            {
+                "name": "eyes",
+                "price": 2000
+            }
+        ]
+    },
+    "Twilfitt and Tatting's": {
+        "inventory": [
+            {
+                "name": "robes",
+                "price": 5000
+            }
+        ]
+    },
+    "Weasleys' Wizard Wheezes": {
+        "inventory": [
+            {
+                "name": "sweet",
+                "price": 2000
+            }
+        ]
+    },
+     "Wiseacre's Wizarding Equipment": {
+        "inventory": [
+            {
+                "name": "telescope",
+                "price": 2000
+            }
+        ]
+    }
+}

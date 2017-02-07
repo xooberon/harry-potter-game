@@ -1,0 +1,49 @@
+{
+    "backgroundValues": [
+        "Muggle upbringing",
+        "Magical upbringing"
+    ],
+    "characteristicValues": [
+        "Animagus",
+        "Bookworm",
+        "Born to fly",
+        "Charmer",
+        "Eccentric",
+        "Hand-me-downs",
+        "Heirloom",
+        "Know-it-all",
+        "Metamorphmagus",
+        "Padfoot",
+        "Parselmouth",
+        "Prodigy",
+        "Prestigious family",
+        "Tattletale/gossip",
+        "Wealthy",
+        "Werewolf"
+    ],
+    "wandCoreValues": [
+        "Dragon heartstring",
+        "Phoenix feather",
+        "Unicorn hair"
+    ],
+    "wandWoodValues": [
+        "Ash",
+        "Elm",
+        "Fir",
+        "Holly",
+        "Hornbeam",
+        "Mahogany",
+        "Oak",
+        "Rosewood",
+        "Vine",
+        "Walnut",
+        "Willow",
+        "Yew"
+    ],
+    "houseValues": [
+        "Slytherin",
+        "Ravenclaw",
+        "Hufflepuff",
+        "Gryffindor"
+    ]
+}
