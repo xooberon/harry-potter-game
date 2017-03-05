@@ -6,8 +6,11 @@ Created on 4/02/2017
 
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk
+import UI
 from CharacterInfo import CharacterInfo
-from DiagonAlley import DiagonAlley
+from IntroUIFirstPage import IntroUIFirstPage
+from IntroUISecondPage import IntroUISecondPage
 
 class IntroUI(tk.Frame):
   
@@ -17,133 +20,48 @@ class IntroUI(tk.Frame):
         self.parent = parent
         self.characterInfo = CharacterInfo()
         self.currentPage = 0
-        self.nextButtonExists = False
-
         self.parent.title("Character Sheet")
         self.pack(fill=tk.BOTH, expand=1)
 
-    def createIntroPage(self):
+    def displayNextPage(self):
+        topBannerImageFile = "images/top-banner-" + str(self.currentPage) + ".png"
+        topBannerImage = ImageTk.PhotoImage(Image.open(topBannerImageFile))
+        topBanner = tk.Label(self, image=topBannerImage)
+        topBanner.image = topBannerImage
+        topBanner.grid(row=0, column=0, columnspan=3)
+
+        leftBannerImageFile = "images/left-banner-" + str(self.currentPage) + ".png"
+        leftBannerImage = ImageTk.PhotoImage(Image.open(leftBannerImageFile))
+        leftBanner = tk.Label(self, image=leftBannerImage)
+        leftBanner.image = leftBannerImage
+        leftBanner.grid(row=1, column=0, sticky=tk.NW)
+
         if( self.currentPage == 0 ):
-            self.createIntroFirstPage()
+            mainDisplay = self.createIntroFirstPage()
         elif( self.currentPage == 1 ):
-            self.createIntroSecondPage()
+            mainDisplay = self.createIntroSecondPage()
         else:
             self.createIntroThirdPage()
+        mainDisplay.grid(row=1, column=1, sticky=tk.N)
 
+        rightBannerImageFile = "images/right-banner-" + str(self.currentPage) + ".png"
+        rightBannerImage = ImageTk.PhotoImage(Image.open(rightBannerImageFile))
+        rightBanner = tk.Label(self, image=rightBannerImage)
+        rightBanner.image = rightBannerImage
+        rightBanner.grid(row=1, column=2, sticky=tk.NE)
+
+        self.currentPage = self.currentPage+1
+        
     def createIntroFirstPage(self):
-        self.createMessage("Welcome to the wizarding world! What is your name?")
-        self.createCharacterNameField()
-        whiteSpace1 = tk.Label(self, text="", background="white")
-        whiteSpace1.pack()
-        self.createMessage("Were you raised in the Muggle world or in the wizarding world?")
-        self.createBackgroundMenu()
-        whiteSpace2 = tk.Label(self, text="", background="white")
-        whiteSpace2.pack()
-        self.createMessage("What characteristic have you chosen?")
-        self.createCharacteristicMenu()
+        firstPage = IntroUIFirstPage(self, self.parent)
+        firstPage.displayUI()
+        return firstPage
 
     def createIntroSecondPage(self):
-        for widget in self.winfo_children():
-            widget.destroy()
-        self.nextButtonExists = False
-        self.characterInfo.setStartingGold()
-        gold = self.characterInfo.getGold()
-        self.createMessage("Welcome to Diagon Alley! You have " + gold[0] + " galleons, " + gold[1] + " sickles, and " + gold[2] + " knuts to spend.")
-        whiteSpace = tk.Label(self, text="", background="white")
-        whiteSpace.pack()
-        diagonAlley = DiagonAlley(self)
-        diagonAlley.displayUI()
-
-        def goToKnockturnAlley():
-            print("knockturn")
-        knockturnAlleyButton = tk.Button(self, text="Knockturn Alley", command=goToKnockturnAlley, background="white")
-        knockturnAlleyButton.place(relx=0, rely=.2, anchor=tk.NW)
-#        self.createMessage("The wand chooses the wizard! What wand chose you?")
-#        self.createWandMenus()
+        secondPage = IntroUISecondPage(self, self.parent)
+        secondPage.displayUI()
+        return secondPage
 
     def createIntroThirdPage(self):
         self.createMessage("Your house is like your family at Hogwarts. What house are you in?")
         self.createHouseMenu()
-
-    def createMessage(self, text):
-        nameMessage = tk.Label(self, text=text, background="white")
-        nameMessage.pack()
-
-    def createMenu(self, parent, options, callback):
-        defaultOption = tk.StringVar(self)
-        defaultOption.set(options[0])
-        menu = tk.OptionMenu(parent, defaultOption, *options, command=callback)
-        menu.config(background="white")
-        menu["menu"].config(background="white")
-        return menu
-
-    def createEntryField(self, buttonText, callback):
-        frame = tk.Frame(self, background="white")
-        frame.pack()
-        
-        defaultText = tk.StringVar(self)
-        entry = tk.Entry(frame, textvariable=defaultText)
-        entry.pack(side=tk.LEFT)
-        button = tk.Button(frame, text=buttonText, command=callback, background="white")
-        button.pack(side=tk.LEFT)
-
-        return entry
-
-    def createCharacterNameField(self):
-        def characterNameWasSet():
-            name = nameEntry.get()
-            if( len(name)!=0 ):
-                self.characterInfo.setCharacterName(nameEntry.get())
-                self.parent.title("Character Sheet for " + self.characterInfo.getCharacterName())
-                self.createNextButton()
-
-        nameEntry = self.createEntryField("Set name", characterNameWasSet)
-
-    def createNextButton(self):
-        if( self.nextButtonExists == False ):
-            def moveToPageTwo():
-                result = tk.messagebox.askokcancel("Are you sure?", "You cannot go back and edit these values.")
-                if( result ):
-                    self.currentPage = self.currentPage+1
-                    self.createIntroPage()
-            nextButton = tk.Button(self, text="Next page", command=moveToPageTwo, background="white")
-            whiteSpace = tk.Label(self, text="", background="white")
-            whiteSpace.pack()
-            nextButton.pack()
-            self.nextButtonExists = True
-
-    def createBackgroundMenu(self):
-        def backgroundWasSet(background):
-            self.characterInfo.setBackground(background)
-
-        backgrounds = self.createMenu(self, self.characterInfo.backgroundValues, backgroundWasSet)
-        backgrounds.pack()
-
-    def createCharacteristicMenu(self):
-        def characteristicWasSet(characteristic):
-            self.characterInfo.setCharacteristic(characteristic)
-
-        characteristics = self.createMenu(self, self.characterInfo.characteristicValues, characteristicWasSet)
-        characteristics.pack()
-
-    def createWandMenus(self):
-        wandFrame = tk.Frame(self, background="white")
-        wandFrame.pack()
-
-        def wandCoreWasSet(wandCore):
-            self.characterInfo.setWandCore(wandCore)
-        def wandWoodWasSet(wandWood):
-            self.characterInfo.setWandWood(wandWood)
-
-        wandCores = self.createMenu(wandFrame, self.characterInfo.wandCoreValues, wandCoreWasSet)
-        wandCores.pack(side=tk.LEFT)
-
-        wandWoods = self.createMenu(wandFrame, self.characterInfo.wandWoodValues, wandWoodWasSet)
-        wandWoods.pack(side=tk.LEFT)
-
-    def createHouseMenu(self):
-        def houseWasSet(house):
-            self.characterInfo.setHouse(house)
-                               
-        houses = self.createMenu(self, self.characterInfo.houseValues, houseWasSet)
-        houses.pack()

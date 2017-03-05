@@ -11,7 +11,7 @@ class DiagonAlley(tk.Frame):
         self.characterInfo = CharacterInfo()
         self.pack()
 
-        with open('DiagonAlleyData.json') as data_file:
+        with open('data/DiagonAlleyData.json') as data_file:
             self.shops = json.load(data_file)
 
     def displayUI(self):
@@ -25,7 +25,7 @@ class DiagonAlley(tk.Frame):
             if( y==0 ):
                 self.buttons.append([])
             self.buttons[x].append(tk.Button(self, text=name, command=callback, background="white"))
-            self.buttons[x][y].grid(row=x, column=y, sticky=tk.W+tk.E+tk.N+tk.S)
+            self.buttons[x][y].pack()
 
         def goToShop(name):
             self.goToShop(name)

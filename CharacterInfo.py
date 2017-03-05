@@ -16,7 +16,7 @@ class CharacterInfo:
     speed = 5
 
     def __init__(self):
-        with open('CharacterInfoData.json') as data_file:
+        with open('data/CharacterInfoData.json') as data_file:
             data = json.load(data_file)
         self.backgroundValues       = data["backgroundValues"]
         self.characteristicValues   = data["characteristicValues"]
