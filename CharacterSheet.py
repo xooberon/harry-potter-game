@@ -6,9 +6,13 @@ Created on 4/02/2017
 
 import tkinter
 from IntroUI import IntroUI
+import UI
 
+print("Hello world")
 root = tkinter.Tk()
-root.geometry("755x792+0+0")
+width = UI.windowWidth(root)
+height = UI.windowHeight(root)
+root.geometry(str(int(width)) + "x" + str(height) + "+0+0")
 root.resizable(width=False, height=False)
 root.IntroUI = IntroUI(root)
 root.IntroUI.displayNextPage()

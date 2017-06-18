@@ -1,138 +1,47 @@
 {
     "Eeylop's Owl Emporium": {
-        "inventory": [
-            {
-                "name": "Snowy Owl",
-                "price": 7395
-            },
-            {
-                "name": "Tawny Owl",
-                "price": 4930
-            },
-            {
-                "name": "Screech Owl",
-                "price": 7395
-            },
-            {
-                "name": "Barn Owl",
-                "price": 4930
-            },
-            {
-                "name": "Brown Owl",
-                "price": 4930
-            }
-        ]
+        "fileName": "eeylops.json"
     },
     "Florean Fortescue's Ice Cream Parlour": {
-        "inventory": [
-            {
-                "name": "ice cream",
-                "price": 50
-            }
-        ]
+        "fileName": "florean.json"
     },
     "Flourish & Blotts": {
-        "inventory": [
-            {
-                "name": "Quill",
-                "price": 1000
-            }
-        ]
+        "fileName": "flourish.json"
     },
     "Gambol and Japes": {
-        "inventory": [
-            {
-                "name": "Firework",
-                "price": 2000
-            }
-        ]
+        "fileName": "gambol.json"
     },
     "Gringotts Wizarding Bank": {
-        "inventory": [
-            {
-                "name": "wallet",
-                "price": 2000
-            }
-        ]
+       "fileName": "gringotts.json"
     },
     "The Leaky Cauldron": {
-        "inventory": [
-            {
-                "name": "beer",
-                "price": 2000
-            }
-        ]
+        "fileName": "leakyCauldron.json"
     },
     "Madam Malkin's Robes for All Occasions": {
-        "inventory": [
-            {
-                "name": "robe",
-                "price": 2000
-            }
-        ]
+        "fileName": "malkins.json"
     },
     "Magical Menagerie": {
-        "inventory": [
-            {
-                "name": "cat",
-                "price": 2000
-            }
-        ]
+        "fileName": "menagerie.json"
     },
     "Ollivanders": {
-        "inventory": [
-            {
-                "name": "wand",
-                "price": 5000
-            }
-        ]
+        "fileName": "ollivanders.json"
     },
     "Potage's Cauldron Shop": {
-        "inventory": [
-            {
-                "name": "cauldron",
-                "price": 2000
-            }
-        ]
+        "fileName": "potages.json"
     },
     "Quality Quidditch Supplies": {
-        "inventory": [
-            {
-                "name": "broomstick",
-                "price": 5000
-            }
-        ]
+        "fileName": "quidditchSupplies.json"
     },
     "Slug and Jiggers Apothecary": {
-        "inventory": [
-            {
-                "name": "eyes",
-                "price": 2000
-            }
-        ]
+        "fileName": "apothecary.json"
     },
     "Twilfitt and Tatting's": {
-        "inventory": [
-            {
-                "name": "robes",
-                "price": 5000
-            }
-        ]
+        "fileName": "twilfitt.json"
     },
     "Weasleys' Wizard Wheezes": {
-        "inventory": [
-            {
-                "name": "sweet",
-                "price": 2000
-            }
-        ]
+        "fileName": "weasley.json"
     },
-     "Wiseacre's Wizarding Equipment": {
-        "inventory": [
-            {
-                "name": "telescope",
-                "price": 2000
-            }
-        ]
+    "Wiseacre's Wizarding Equipment": {
+        "fileName": "wiseacres.json"
     }
 }

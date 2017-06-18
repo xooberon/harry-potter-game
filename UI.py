@@ -1,13 +1,24 @@
 import tkinter as tk
 from CharacterInfo import CharacterInfo
 
+
+def windowWidth(root):
+    return int(root.winfo_screenwidth() / 2)
+
+
+def windowHeight(root):
+    return int(root.winfo_screenheight() - 80)
+
+
 def createWhiteSpace(frame):
     whiteSpace = tk.Label(frame, text="", background="white")
     whiteSpace.pack()
 
+
 def createMessage(frame, text):
     nameMessage = tk.Label(frame, text=text, background="white")
     nameMessage.pack()
+
 
 def createMenu(frame, options, callback):
     defaultOption = tk.StringVar(frame)
@@ -16,6 +27,7 @@ def createMenu(frame, options, callback):
     menu.config(background="white")
     menu["menu"].config(background="white")
     menu.pack()
+
 
 def createEntryField(frame, buttonText, callback):
     entryFieldFrame = tk.Frame(frame, background="white")
@@ -29,10 +41,12 @@ def createEntryField(frame, buttonText, callback):
 
     return entry
 
+
 def createNextButton(frame, callback):
     nextButton = tk.Button(frame, text="Next page", command=callback, background="white")
     createWhiteSpace(frame)
     nextButton.pack()
+
 
 def createWandMenus(self):
     wandFrame = tk.Frame(self, background="white")
@@ -40,14 +54,18 @@ def createWandMenus(self):
 
     def wandCoreWasSet(wandCore):
         self.characterInfo.setWandCore(wandCore)
+
     def wandWoodWasSet(wandWood):
         self.characterInfo.setWandWood(wandWood)
 
-    wandCores = self.createMenu(wandFrame, self.characterInfo.wandCoreValues, wandCoreWasSet)
+    wandCoreValues = self.characterInfo.wandCoreValues
+    wandCores = self.createMenu(wandFrame, wandCoreValues, wandCoreWasSet)
     wandCores.pack(side=tk.LEFT)
 
-    wandWoods = self.createMenu(wandFrame, self.characterInfo.wandWoodValues, wandWoodWasSet)
+    wandWoodValues = self.characterInfo.wandWoodValues
+    wandWoods = self.createMenu(wandFrame, wandWoodValues, wandWoodWasSet)
     wandWoods.pack(side=tk.LEFT)
+
 
 def createHouseMenu(self):
     def houseWasSet(house):

@@ -1,0 +1,24 @@
+{
+	"inventory": [
+		{
+			"name": "Snowy Owl",
+			"price": 7395
+		},
+		{
+			"name": "Tawny Owl",
+			"price": 4930
+		},
+		{
+			"name": "Screech Owl",
+			"price": 7395
+		},
+		{
+			"name": "Barn Owl",
+			"price": 4930
+		},
+		{
+			"name": "Brown Owl",
+			"price": 4930
+		}
+	]
+}
