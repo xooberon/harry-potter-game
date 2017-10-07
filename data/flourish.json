@@ -1,0 +1,189 @@
+{
+	"inventory": [
+		{
+			"name": "A Beginner's Guide to Transfiguration",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "A Compendium of Common Curses and Their Counter-Actions",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "A History of Magic",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Advanced Potion-Making",
+			"price": 1479,
+			"image": ""
+		},
+		{
+			"name": "Armando Dippet: Master or Moron?",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Basic Hexes for the Busy and Vexed",
+			"price": 1479,
+			"image": ""
+		}
+		{
+			"name": "Book of Potions",
+			"price": 1479,
+			"image": ""
+		},
+		{
+			"name": "Break with a Banshee",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Dumbledore's Army: The Dark Side of the Demob",
+			"price": 4930,
+			"image": ""
+		},
+		{
+			"name": "Easy Spells to Fool Muggles",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "Fantastic Beasts and Where to Find Them",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Gadding with Ghouls",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Hogwarts: A History",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Holidays with Hags",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Intermediate Transfiguration",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Jinxes for the Jinxed",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Magical Drafts and Potions",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Magical Me",
+			"price": 2958,
+			"image": ""
+		},
+		{
+			"name": "Magical Theory",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "My Life As A Squib",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "One Thousand Magical Herbs and Fungi",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "The Dark Forces: A Guide to Self-Protection",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Life and Lies of Albus Dumbledore",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "The Monster Book of Monsters",
+			"price": 1972,
+			"image": ""
+		},
+		{
+			"name": "The Official Guide to the Quidditch World Cup",
+			"price": 19227,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 1",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 2",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 3",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 4",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 5",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 6",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 7",
+			"price": 493,
+			"image": ""
+		},
+		{
+			"name": "Travels with Trolls",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Unfogging the Future",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Voyages with Vampires",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Wanderings with Werewolves",
+			"price": 2465,
+			"image": ""
+		},
+		{
+			"name": "Year with the Yeti",
+			"price": 2465,
+			"image": ""
+		}
+	]
+}

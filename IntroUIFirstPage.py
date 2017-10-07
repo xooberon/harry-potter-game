@@ -11,33 +11,29 @@ class IntroUIFirstPage(tk.Frame):
         self.parent = parent
         self.root = root
         self.characterInfo = CharacterInfo()
-        self.nextButtonExists = False
+        self.nameSet = False
+        self.backgroundSet = False
+        self.characteristicSet = False
 
     def displayUI(self):
         def nameCallback():
-            def moveToPageTwo():
-                messageTitle = "Are you sure?"
-                messageText = "You cannot go back and edit these values."
-                result = tk.messagebox.askokcancel(messageTitle, messageText)
-                if(result):
-                    self.parent.displayNextPage()
-                    for widget in self.winfo_children():
-                        widget.destroy()
-
             name = nameEntry.get()
             if(len(name) != 0):
                 self.characterInfo.setCharacterName(nameEntry.get())
                 name = self.characterInfo.getCharacterName()
                 self.root.title("Character Sheet for " + name)
-                if(self.nextButtonExists is False):
-                    UI.createNextButton(self, moveToPageTwo)
-                    self.nextButtonExists = True
+                self.nameSet = True
+                self.updateNextButton()
 
         def backgroundCallback(background):
             self.characterInfo.setBackground(background)
+            self.backgroundSet = True
+            self.updateNextButton()
 
         def characteristicCallback(characteristic):
             self.characterInfo.setCharacteristic(characteristic)
+            self.characteristicSet = True
+            self.updateNextButton()
 
         UI.createWhiteSpace(self)
         welcomeMessage = "Welcome to the wizarding world! What is your name?"
@@ -53,3 +49,16 @@ class IntroUIFirstPage(tk.Frame):
         UI.createMessage(self, "What characteristic have you chosen?")
         characteristicValues = self.characterInfo.characteristicValues
         UI.createMenu(self, characteristicValues, characteristicCallback)
+
+    def updateNextButton(self):
+        def moveToPageTwo():
+            messageTitle = "Are you sure?"
+            messageText = "You cannot go back and edit these values."
+            result = tk.messagebox.askokcancel(messageTitle, messageText)
+            if(result):
+                self.parent.displayNextPage()
+                for widget in self.winfo_children():
+                    widget.destroy()
+
+        if(self.nameSet is True & self.backgroundSet is True & self.characteristicSet is True):
+            UI.createNextButton(self, moveToPageTwo)

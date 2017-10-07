@@ -1,9 +1,26 @@
 import tkinter as tk
+from PIL import Image, ImageTk
 from CharacterInfo import CharacterInfo
 
 
+def bannerWidth(root):
+    return (int)(windowWidth(root) / 5)
+
+
+def bannerHeight(root):
+    return windowHeight(root)
+
+
+def bodyWidth(root):
+    return (int)(windowWidth(root) * 3 / 5)
+
+
+def bodyHeight(root):
+    return windowHeight(root)
+
+
 def windowWidth(root):
-    return int(root.winfo_screenwidth() / 2)
+    return int(root.winfo_screenheight() - 80)
 
 
 def windowHeight(root):
@@ -22,7 +39,7 @@ def createMessage(frame, text):
 
 def createMenu(frame, options, callback):
     defaultOption = tk.StringVar(frame)
-    defaultOption.set(options[0])
+    defaultOption.set("Please choose a value")
     menu = tk.OptionMenu(frame, defaultOption, *options, command=callback)
     menu.config(background="white")
     menu["menu"].config(background="white")
@@ -46,6 +63,11 @@ def createNextButton(frame, callback):
     nextButton = tk.Button(frame, text="Next page", command=callback, background="white")
     createWhiteSpace(frame)
     nextButton.pack()
+
+
+def createBackButton(frame, text, callback):
+    backButton = tk.Button(frame, text=text, command=callback, background="white")
+    return backButton
 
 
 def createWandMenus(self):
@@ -72,3 +94,20 @@ def createHouseMenu(self):
         self.characterInfo.setHouse(house)
     houses = self.createMenu(self, self.characterInfo.houseValues, houseWasSet)
     houses.pack()
+
+
+def createShopItem(self, text, image_width, image_height):
+    shopItemFrame = tk.Frame(self, background="white")
+    shopItemImage = getShopItemImage(text, image_width, image_height)
+    shopItem = tk.Label(shopItemFrame, image=shopItemImage)
+    shopItem.image = shopItemImage
+    shopItem.pack()
+    createMessage(shopItemFrame, text)
+    return shopItemFrame
+
+def getShopItemImage(text, width, height):
+    shopItemFile = "images/default-icon.png"
+    shopItemFullSize = Image.open(shopItemFile)
+    shopItemResized = shopItemFullSize.resize((width, height), Image.ANTIALIAS)
+    shopItemImage = ImageTk.PhotoImage(shopItemResized)
+    return shopItemImage

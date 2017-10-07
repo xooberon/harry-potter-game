@@ -2,23 +2,48 @@
 	"inventory": [
 		{
 			"name": "Snowy Owl",
-			"price": 7395
+			"price": 7395,
+			"image": ""
 		},
 		{
 			"name": "Tawny Owl",
-			"price": 4930
+			"price": 4930,
+			"image": ""
+		},
+		{
+			"name": "Tawny Owl",
+			"price": 4930,
+			"image": ""
 		},
 		{
 			"name": "Screech Owl",
-			"price": 7395
+			"price": 7395,
+			"image": ""
 		},
 		{
 			"name": "Barn Owl",
-			"price": 4930
+			"price": 4930,
+			"image": ""
+		},
+		{
+			"name": "Barn Owl",
+			"price": 4930,
+			"image": ""
 		},
 		{
 			"name": "Brown Owl",
-			"price": 4930
+			"price": 4930,
+			"image": ""
+		},
+		{
+			"name": "Brown Owl",
+			"price": 4930,
+			"image": ""
+		},
+		{
+			"name": "Brown Owl",
+			"price": 4930,
+			"image": ""
 		}
 	]
 }

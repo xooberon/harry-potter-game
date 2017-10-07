@@ -18,21 +18,22 @@ class IntroUI(tk.Frame):
         tk.Frame.__init__(self, parent, background="white")
 
         self.parent = parent
-        self.width = UI.windowWidth(parent)
-        self.height = UI.windowHeight(parent)
+        self.banner_width = UI.bannerWidth(parent)
+        self.banner_height = UI.bannerHeight(parent)
         self.characterInfo = CharacterInfo()
         self.currentPage = 0
         self.parent.title("Character Sheet")
         self.pack(fill=tk.BOTH, expand=1)
 
     def displayNextPage(self):
-        topHeight = int(self.height / 5)
-        topBannerImage = self.getTopImage(topHeight)
+        # This is used to maintain the correct width
+        width = UI.windowWidth(self.parent)
+        topBannerImage = ImageTk.PhotoImage(Image.new("RGB", (width, 1), "white"))
         topBanner = tk.Label(self, image=topBannerImage)
         topBanner.image = topBannerImage
         topBanner.grid(row=0, column=0, columnspan=3)
 
-        leftBannerImage = self.getLeftImage(topHeight)
+        leftBannerImage = self.getLeftImage()
         leftBanner = tk.Label(self, image=leftBannerImage)
         leftBanner.image = leftBannerImage
         leftBanner.grid(row=1, column=0, sticky=tk.NW)
@@ -45,7 +46,7 @@ class IntroUI(tk.Frame):
             self.createIntroThirdPage()
         mainDisplay.grid(row=1, column=1, sticky=tk.N)
 
-        rightBannerImage = self.getRightImage(topHeight)
+        rightBannerImage = self.getRightImage()
         rightBanner = tk.Label(self, image=rightBannerImage)
         rightBanner.image = rightBannerImage
         rightBanner.grid(row=1, column=2, sticky=tk.NE)
@@ -68,28 +69,16 @@ class IntroUI(tk.Frame):
         self.createMessage(message)
         self.createHouseMenu()
 
-    def getTopImage(self, height):
-        topBannerFile = "images/top-banner-" + str(self.currentPage) + ".png"
-        topFullSize = Image.open(topBannerFile)
-        width = self.width
-        topResized = topFullSize.resize((width, height), Image.ANTIALIAS)
-        topBannerImage = ImageTk.PhotoImage(topResized)
-        return topBannerImage
-
-    def getLeftImage(self, topHeight):
+    def getLeftImage(self):
         leftBannerFile = "images/left-banner-" + str(self.currentPage) + ".png"
         leftFullSize = Image.open(leftBannerFile)
-        width = int(self.width / 5)
-        height = self.height - topHeight
-        leftResized = leftFullSize.resize((width, height), Image.ANTIALIAS)
+        leftResized = leftFullSize.resize((self.banner_width, self.banner_height), Image.ANTIALIAS)
         leftBannerImage = ImageTk.PhotoImage(leftResized)
         return leftBannerImage
 
-    def getRightImage(self, topHeight):
+    def getRightImage(self):
         rightFile = "images/right-banner-" + str(self.currentPage) + ".png"
         rightFullSize = Image.open(rightFile)
-        width = int(self.width / 5)
-        height = self.height - topHeight
-        rightResized = rightFullSize.resize((width, height), Image.ANTIALIAS)
+        rightResized = rightFullSize.resize((self.banner_width, self.banner_height), Image.ANTIALIAS)
         rightBannerImage = ImageTk.PhotoImage(rightResized)
         return rightBannerImage

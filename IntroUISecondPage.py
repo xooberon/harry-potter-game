@@ -20,5 +20,5 @@ class IntroUISecondPage(tk.Frame):
                 "and " + gold[2] + " knuts to spend.")
         UI.createMessage(self, text)
         UI.createWhiteSpace(self)
-        diagonAlley = DiagonAlley(self)
+        diagonAlley = DiagonAlley(self, self.root)
         diagonAlley.displayUI()
