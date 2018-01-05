@@ -8,7 +8,6 @@ import tkinter
 from IntroUI import IntroUI
 import UI
 
-print("Hello world")
 root = tkinter.Tk()
 width = UI.windowWidth(root)
 height = UI.windowHeight(root)

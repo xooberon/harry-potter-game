@@ -18,8 +18,8 @@ class IntroUI(tk.Frame):
         tk.Frame.__init__(self, parent, background="white")
 
         self.parent = parent
-        self.banner_width = UI.bannerWidth(parent)
-        self.banner_height = UI.bannerHeight(parent)
+        self.bannerWidth = UI.bannerWidth(parent)
+        self.bannerHeight = UI.bannerHeight(parent)
         self.characterInfo = CharacterInfo()
         self.currentPage = 0
         self.parent.title("Character Sheet")
@@ -72,13 +72,13 @@ class IntroUI(tk.Frame):
     def getLeftImage(self):
         leftBannerFile = "images/left-banner-" + str(self.currentPage) + ".png"
         leftFullSize = Image.open(leftBannerFile)
-        leftResized = leftFullSize.resize((self.banner_width, self.banner_height), Image.ANTIALIAS)
+        leftResized = leftFullSize.resize((self.bannerWidth, self.bannerHeight), Image.ANTIALIAS)
         leftBannerImage = ImageTk.PhotoImage(leftResized)
         return leftBannerImage
 
     def getRightImage(self):
         rightFile = "images/right-banner-" + str(self.currentPage) + ".png"
         rightFullSize = Image.open(rightFile)
-        rightResized = rightFullSize.resize((self.banner_width, self.banner_height), Image.ANTIALIAS)
+        rightResized = rightFullSize.resize((self.bannerWidth, self.bannerHeight), Image.ANTIALIAS)
         rightBannerImage = ImageTk.PhotoImage(rightResized)
         return rightBannerImage

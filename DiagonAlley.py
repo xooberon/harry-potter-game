@@ -50,5 +50,3 @@ class DiagonAlley(tk.Frame):
         fileName = self.shops[name]["fileName"]
         shop = Shop(self, self.root, name, fileName, goBack)
         shop.showUI()
-
-        button_text = "Return to Diagon Alley"
