@@ -1,13 +1,9 @@
 {
+	"shop-type": "grid",
 	"inventory": [
 		{
 			"name": "Snowy Owl",
 			"price": 7395,
-			"image": ""
-		},
-		{
-			"name": "Tawny Owl",
-			"price": 4930,
 			"image": ""
 		},
 		{
@@ -26,23 +22,28 @@
 			"image": ""
 		},
 		{
-			"name": "Barn Owl",
-			"price": 4930,
-			"image": ""
-		},
-		{
 			"name": "Brown Owl",
 			"price": 4930,
 			"image": ""
 		},
 		{
-			"name": "Brown Owl",
-			"price": 4930,
+			"name": "Owl Treats",
+			"price": 116,
 			"image": ""
 		},
 		{
-			"name": "Brown Owl",
-			"price": 4930,
+			"name": "Small Cage",
+			"price": 986,
+			"image": ""
+		},
+		{
+			"name": "Standard Cage",
+			"price": 1479,
+			"image": ""
+		},
+		{
+			"name": "Large Cage",
+			"price": 2465,
 			"image": ""
 		}
 	]

@@ -21,13 +21,9 @@ class DiagonAlley(tk.Frame):
         self.buttons = []
         shopNames = list(self.shops)
         for i in range(len(self.shops)):
-            # x = int(i / 3)
-            # y = i % 3
             name = shopNames[i]
 
             callback = lambda name=name:goToShop(name)
-            # if(y == 0):
-                # self.buttons.append([])
             self.buttons.append(tk.Button(self, text=name, command=callback, background="white"))
             self.buttons[i].pack()
         UI.createWhiteSpace(self)

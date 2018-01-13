@@ -15,10 +15,12 @@ class IntroUISecondPage(tk.Frame):
     def displayUI(self):
         self.characterInfo.setStartingGold()
         gold = self.characterInfo.getGold()
+
         UI.createMessage(self, "Welcome to Diagon Alley!")
         text = ("You have " + gold[0] + " galleons, " + gold[1] + " sickles,"
                 "and " + gold[2] + " knuts to spend.")
         UI.createMessage(self, text)
         UI.createWhiteSpace(self)
+
         diagonAlley = DiagonAlley(self, self.root)
         diagonAlley.displayUI()

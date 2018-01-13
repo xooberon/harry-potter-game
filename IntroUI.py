@@ -28,10 +28,10 @@ class IntroUI(tk.Frame):
     def displayNextPage(self):
         # This is used to maintain the correct width
         width = UI.windowWidth(self.parent)
-        topBannerImage = ImageTk.PhotoImage(Image.new("RGB", (width, 1), "white"))
-        topBanner = tk.Label(self, image=topBannerImage)
-        topBanner.image = topBannerImage
-        topBanner.grid(row=0, column=0, columnspan=3)
+        topWidthImage = ImageTk.PhotoImage(Image.new("RGB", (width, 0), "white"))
+        topWidth = tk.Label(self, image=topWidthImage)
+        topWidth.image = topWidthImage
+        topWidth.grid(row=0, column=0, columnspan=3)
 
         leftBannerImage = self.getLeftImage()
         leftBanner = tk.Label(self, image=leftBannerImage)

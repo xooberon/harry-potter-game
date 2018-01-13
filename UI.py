@@ -59,7 +59,8 @@ def createWrappedMessage(frame, text, wrapLength, heightInLines):
 def truncateText(text, width, heightInLines, font):
     numberOfLines = font.measure(text) / width
     while(numberOfLines > heightInLines):
-        text = text.rsplit(' ', 1)[0]
+        text = text.rstrip('...')
+        text = text[:-1]
         text += "..."
         numberOfLines = font.measure(text) / width
     return text
@@ -92,7 +93,7 @@ def createEntryField(frame, buttonText, callback):
 
 
 def createMultiLineEntryField(frame, buttonText, width, height, callback):
-    entryFieldFrame = tk.Frame(frame, background="blue")
+    entryFieldFrame = tk.Frame(frame, background="white")
     entryFieldFrame.config(width=width)
     entryFieldFrame.config(height=height)
     entryFieldFrame.pack()
@@ -130,8 +131,12 @@ def createShopItemImage(frame, text, image_width, image_height):
 
 
 def createShopItemLabel(frame, text, text_width, heightInLines):
-    itemLabel = createWrappedMessage(frame, text, text_width, heightInLines)
-    return itemLabel
+    labelFrame = tk.Frame(frame, background="white")
+    nameHeight = heightInLines - 1
+    name = createWrappedMessage(labelFrame, text, text_width, nameHeight)
+    name.pack()
+    createMessage(labelFrame, "0 G")
+    return labelFrame
 
 
 def createBuyButton(frame):

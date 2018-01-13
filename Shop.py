@@ -19,19 +19,60 @@ class Shop(tk.Frame):
             self.shopData = json.load(data_file)
 
     def showUI(self):
+        shopType = self.shopData["shop-type"]
         inventory = self.shopData["inventory"]
         inventoryFrame = tk.Frame(self, background="white")
         inventoryFrame.pack()
 
-        startIndices = []
-        startIndices.append(0)
-        self.displayPage(inventory, inventoryFrame, 0, startIndices)
+        if(shopType == "grid"):
+            startIndices = []
+            startIndices.append(0)
+            buttonText = "Return to Diagon Alley"
+            self.displayPage(inventory, inventoryFrame, 0, startIndices, buttonText, self.callback)
+        elif(shopType == "subsection"):
+            self.displaySubsections(inventory, inventoryFrame)
 
-    def displayPage(self, inventory, frame, pageNumber, startIndices):
-        itemSize = 100
+    def displaySubsections(self, inventory, frame):
+        buttons = []
+        sectionNames = list(inventory)
+        for i in range(len(inventory)):
+            name = sectionNames[i]
+
+            callback = lambda name=name:goToSection(name)
+            buttons.append(tk.Button(frame, text=name, command=callback, background="white"))
+            buttons[i].pack()
+        UI.createWhiteSpace(frame)
+        UI.createWhiteSpace(frame)
+
+        buttonText = "Return to Diagon Alley"
+        diagonAlleyButton = UI.createButton(frame, buttonText, self.callback)
+        diagonAlleyButton.pack()
+
+        def goToSection(name):
+            for widget in frame.winfo_children():
+                widget.destroy()
+
+            def buttonCallback():
+                for widget in frame.winfo_children():
+                    widget.destroy()
+                self.displaySubsections(inventory, frame)
+
+            startIndices = []
+            startIndices.append(0)
+            sectionInventory = inventory[name]["inventory"]
+            buttonText = "Return to " + self.name
+            self.displayPage(sectionInventory, frame, 0, startIndices, buttonText, buttonCallback)
+
+
+    def displayPage(self, inventory, frame, pageNumber, startIndices, buttonText, buttonCallback):
+        imageSize = 100
         labelHeight = 2
         width = UI.bodyWidth(self.root)
-        col = width // itemSize
+        col = width // imageSize    # Put as many columns as can fit based on the image size
+        itemSize = width / col      # However the item may take up the full available width
+        print("itemSize")
+        print(itemSize)
+        print(width)
 
         for widget in frame.winfo_children():
             widget.destroy()
@@ -40,36 +81,43 @@ class Shop(tk.Frame):
         for i in range(start, len(inventory)):
             name = inventory[i]["name"]
             column = i % col
-            itemImage = UI.createShopItemImage(frame, name, itemSize, itemSize)
+            itemImage = UI.createShopItemImage(frame, name, imageSize, imageSize)
             itemImage.grid(row=i // col * 4, column=column)
             itemLabel = UI.createShopItemLabel(frame, name, itemSize, labelHeight)
             itemLabel.grid(row=i // col * 4 + 1, column=column)
-            buttonFrame = tk.Frame(frame, background="yellow")
+            buttonFrame = tk.Frame(frame, background="white")
             UI.createBuyButton(buttonFrame)
             UI.createDetailsButton(buttonFrame)
             buttonFrame.grid(row=i // col * 4 + 2, column=column)
-            if(column == col - 1 and self.readyForNextPage(frame, itemSize, itemLabel, buttonFrame)):
+            if(column == col - 1 and self.readyForNextPage(frame, imageSize, itemLabel, buttonFrame)):
                 startIndices.append(i + 1)
                 break
             UI.emptyRow(frame).grid(row=i // col * 4 + 3, column=column)
 
         def goForwardCallback():
-            self.displayPage(inventory, frame, pageNumber + 1, startIndices)
+            self.displayPage(inventory, frame, pageNumber + 1, startIndices, buttonText, buttonCallback)
 
         def goBackCallback():
-            self.displayPage(inventory, frame, pageNumber - 1, startIndices)
+            self.displayPage(inventory, frame, pageNumber - 1, startIndices, buttonText, buttonCallback)
 
-        if(pageNumber != 0):
-            backButton = UI.createButton(frame, "Previous", goBackCallback)
-            backButton.grid(row=999, column=0)
+        navigationFrame = tk.Frame(frame, background="white")
+        backButton = UI.createButton(navigationFrame, "Previous", goBackCallback)
+        backButton.grid(row=0, column=0)
+        if(pageNumber == 0):
+            backButton.config(state=tk.DISABLED)
 
-        buttonText = "Return to Diagon Alley"
-        diagonAlleyButton = UI.createButton(frame, buttonText, self.callback)
-        diagonAlleyButton.grid(row=999, column=col // 2)
+        diagonAlleyButton = UI.createButton(navigationFrame, buttonText, buttonCallback)
+        diagonAlleyButton.grid(row=0, column=1)
 
-        if(i + 1 != end):
-            nextButton = UI.createButton(frame, "More", goForwardCallback)
-            nextButton.grid(row=999, column=col - 1)
+        nextButton = UI.createButton(navigationFrame, "More", goForwardCallback)
+        nextButton.grid(row=0, column=2)
+        if(i + 1 == len(inventory)):
+            nextButton.config(state=tk.DISABLED)
+
+        navigationFrame.grid_columnconfigure(1, weight=1)
+        navigationFrame.grid(row=999, column=0, columnspan=col, sticky=tk.E + tk.W)
+        print(col // 2)
+        print(col)
 
     def readyForNextPage(self, frame, imageHeight, label, button):
         frame.update()

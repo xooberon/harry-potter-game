@@ -1,206 +1,238 @@
 {
-	"inventory": [
-		{
-			"name": "Basic Blaze Box",
-			"price": 2465,
-			"image": ""
+	"shop-type": "subsection",
+	"inventory": {
+		"Skiving Snackboxes": {
+			"inventory": [
+				{
+					"name": "Canary Cream",
+					"price": 203,
+					"image": ""
+				},
+				{
+					"name": "Fever Fudge",
+					"price": 116,
+					"image": ""
+				},
+				{
+					"name": "Fainting Fancy",
+					"price": 116,
+					"image": ""
+				},
+				{
+					"name": "Nosebleed Nougat",
+					"price": 116,
+					"image": ""
+				},
+				{
+					"name": "Ton-Tongue Toffee",
+					"price": 145,
+					"image": ""
+				},
+				{
+					"name": "Puking Pastille",
+					"price": 116,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Deflagration Deluxe",
-			"price": 9860,
-			"image": ""
+		"Muggle Magic": {
+			"inventory": [
+				{
+					"name": "Muggle Playing Cards",
+					"price": 25,
+					"image": ""
+				},
+				{
+					"name": "Muggle Magic Kit",
+					"price": 290,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Canary Cream",
-			"price": 203,
-			"image": ""
+		"Wonder Witch": {
+			"inventory": [
+				{
+					"name": "Wonder Witch Love Potion",
+					"price": 986,
+					"image": ""
+				},
+				{
+					"name": "Wonder Witch Ten Second Pimple Vanisher",
+					"price": 58,
+					"image": ""
+				},
+				{
+					"name": "Wonder Witch Pygmy Puff",
+					"price": 290,
+					"image": ""
+				},
+				{
+					"name": "Wonder Witch Patented Daydream Charm",
+					"price": 261,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Fever Fudge",
-			"price": 116,
-			"image": ""
+		"Back Room": {
+			"inventory": [
+				{
+					"name": "Decoy Detonator",
+					"price": 493,
+					"image": ""
+				},
+				{
+					"name": "Shield Hat",
+					"price": 783,
+					"image": ""
+				},
+				{
+					"name": "Shield Cloak",
+					"price": 1363,
+					"image": ""
+				},
+				{
+					"name": "Shield Gloves",
+					"price": 435,
+					"image": ""
+				},
+				{
+					"name": "Peruvian Instant Darkness Powder",
+					"price": 986,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Fainting Fancy",
-			"price": 116,
-			"image": ""
+		"Fireworks": {
+			"inventory": [
+				{
+					"name": "Basic Blaze Box",
+					"price": 2465,
+					"image": ""
+				},
+				{
+					"name": "Deflagration Deluxe",
+					"price": 9860,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Nosebleed Nougat",
-			"price": 116,
-			"image": ""
+		"Edible": {
+			"inventory": [
+				{
+					"name": "Edible Dark Mark",
+					"price": 10,
+					"image": ""
+				},
+				{
+					"name": "U-No-Poo",
+					"price": 203,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Ton-Tongue Toffee",
-			"price": 145,
-			"image": ""
+		"Toys and Games": {
+			"inventory": [
+				{
+					"name": "Exploding Snap",
+					"price": 232,
+					"image": ""
+				},
+				{
+					"name": "Fanged Frisbee",
+					"price": 348,
+					"image": ""
+				},
+				{
+					"name": "Reusable Hangman",
+					"price": 435,
+					"image": ""
+				},
+				{
+					"name": "Self-Shuffling Playing Cards",
+					"price": 116,
+					"image": ""
+				},
+				{
+					"name": "Toy Broomstick",
+					"price": 744,
+					"image": ""
+				},
+				{
+					"name": "Winged Catapult",
+					"price": 348,
+					"image": ""
+				},
+				{
+					"name": "Starter Wizard's Chess",
+					"price": 92,
+					"image": ""
+				},
+				{
+					"name": "Basic Wizard's Chess",
+					"price": 493,
+					"image": ""
+				},
+				{
+					"name": "Standard Wizard's Chess",
+					"price": 2059,
+					"image": ""
+				},
+				{
+					"name": "Deluxe Wizard's Chess",
+					"price": 4930,
+					"image": ""
+				}
+			]
 		},
-		{
-			"name": "Puking Pastille",
-			"price": 116,
-			"image": ""
-		},
-		{
-			"name": "Edible Dark Mark",
-			"price": 10,
-			"image": ""
-		},
-		{
-			"name": "U-No-Poo",
-			"price": 203,
-			"image": ""
-		},
-		{
-			"name": "Dungbomb (4)",
-			"price": 29,
-			"image": ""
-		},
-		{
-			"name": "Basic Fake Wand",
-			"price": 116,
-			"image": ""
-		},
-		{
-			"name": "Deluxe Fake Wand",
-			"price": 435,
-			"image": ""
-		},
-		{
-			"name": "Headless Hat",
-			"price": 986,
-			"image": ""
-		},
-		{
-			"name": "Punching Telescope",
-			"price": 174,
-			"image": ""
-		},
-		{
-			"name": "Extendable Ears",
-			"price": 87,
-			"image": ""
-		},
-		{
-			"name": "Anti-Gravity Hat",
-			"price": 783,
-			"image": ""
-		},
-		{
-			"name": "Nose Biting Teacup",
-			"price": 232,
-			"image": ""
-		},
-		{
-			"name": "Exploding Snap",
-			"price": 232,
-			"image": ""
-		},
-		{
-			"name": "Fanged Frisbee",
-			"price": 348,
-			"image": ""
-		},
-		{
-			"name": "Reusable Hangman",
-			"price": 435,
-			"image": ""
-		},
-		{
-			"name": "Self-Shuffling Playing Cards",
-			"price": 116,
-			"image": ""
-		},
-		{
-			"name": "Toy Broomstick",
-			"price": 744,
-			"image": ""
-		},
-		{
-			"name": "Winged Catapult",
-			"price": 348,
-			"image": ""
-		},
-		{
-			"name": "Starter Wizard's Chess",
-			"price": 92,
-			"image": ""
-		},
-		{
-			"name": "Basic Wizard's Chess",
-			"price": 493,
-			"image": ""
-		},
-		{
-			"name": "Standard Wizard's Chess",
-			"price": 2059,
-			"image": ""
-		},
-		{
-			"name": "Deluxe Wizard's Chess",
-			"price": 4930,
-			"image": ""
-		},
-		{
-			"name": "Portable Swamp",
-			"price": 2958,
-			"image": ""
-		},
-		{
-			"name": "Muggle Playing Cards",
-			"price": 25,
-			"image": ""
-		},
-		{
-			"name": "Muggle Magic Kit",
-			"price": 290,
-			"image": ""
-		},
-		{
-			"name": "Wonder Witch Love Potion",
-			"price": 986,
-			"image": ""
-		},
-		{
-			"name": "Wonder Witch Ten Second Pimple Vanisher",
-			"price": 58,
-			"image": ""
-		},
-		{
-			"name": "Wonder Witch Pygmy Puff",
-			"price": 290,
-			"image": ""
-		},
-		{
-			"name": "Wonder Witch Patented Daydream Charm",
-			"price": 261,
-			"image": ""
+		"Other": {
+			"inventory": [
+				{
+					"name": "Dungbomb (4)",
+					"price": 29,
+					"image": ""
+				},
+				{
+					"name": "Basic Fake Wand",
+					"price": 116,
+					"image": ""
+				},
+				{
+					"name": "Deluxe Fake Wand",
+					"price": 435,
+					"image": ""
+				},
+				{
+					"name": "Headless Hat",
+					"price": 986,
+					"image": ""
+				},
+				{
+					"name": "Punching Telescope",
+					"price": 174,
+					"image": ""
+				},
+				{
+					"name": "Extendable Ears",
+					"price": 87,
+					"image": ""
+				},
+				{
+					"name": "Anti-Gravity Hat",
+					"price": 783,
+					"image": ""
+				},
+				{
+					"name": "Nose Biting Teacup",
+					"price": 232,
+					"image": ""
+				},
+				{
+					"name": "Portable Swamp",
+					"price": 2958,
+					"image": ""
+				}
+			]
 		}
-	],
-	"backroom": [
-		{
-			"name": "Decoy Detonator",
-			"price": 493,
-			"image": ""
-		},
-		{
-			"name": "Shield Hat",
-			"price": 783,
-			"image": ""
-		},
-		{
-			"name": "Shield Cloak",
-			"price": 1363,
-			"image": ""
-		},
-		{
-			"name": "Shield Gloves",
-			"price": 435,
-			"image": ""
-		},
-		{
-			"name": "Peruvian Instant Darkness Powder",
-			"price": 986,
-			"image": ""
-		}
-	]
+	}
 }
+
