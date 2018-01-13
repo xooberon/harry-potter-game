@@ -5,33 +5,39 @@
 			"inventory": [
 				{
 					"name": "Canary Cream",
-					"price": 203,
-					"image": ""
+					"price": [0, 7, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Fever Fudge",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Fainting Fancy",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Nosebleed Nougat",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Ton-Tongue Toffee",
-					"price": 145,
-					"image": ""
+					"price": [0, 5, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Puking Pastille",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -39,13 +45,15 @@
 			"inventory": [
 				{
 					"name": "Muggle Playing Cards",
-					"price": 25,
-					"image": ""
+					"price": [0, 0, 25],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Muggle Magic Kit",
-					"price": 290,
-					"image": ""
+					"price": [0, 10, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -53,23 +61,27 @@
 			"inventory": [
 				{
 					"name": "Wonder Witch Love Potion",
-					"price": 986,
-					"image": ""
+					"price": [2, 0, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Wonder Witch Ten Second Pimple Vanisher",
-					"price": 58,
-					"image": ""
+					"price": [0, 2, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Wonder Witch Pygmy Puff",
-					"price": 290,
-					"image": ""
+					"price": [0, 10, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Wonder Witch Patented Daydream Charm",
-					"price": 261,
-					"image": ""
+					"price": [0, 9, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -77,28 +89,33 @@
 			"inventory": [
 				{
 					"name": "Decoy Detonator",
-					"price": 493,
-					"image": ""
+					"price": [1, 0, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Shield Hat",
-					"price": 783,
-					"image": ""
+					"price": [1, 10, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Shield Cloak",
-					"price": 1363,
-					"image": ""
+					"price": [2, 13, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Shield Gloves",
-					"price": 435,
-					"image": ""
+					"price": [0, 15, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Peruvian Instant Darkness Powder",
-					"price": 986,
-					"image": ""
+					"price": [2, 0, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -106,13 +123,15 @@
 			"inventory": [
 				{
 					"name": "Basic Blaze Box",
-					"price": 2465,
-					"image": ""
+					"price": [5, 0, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Deflagration Deluxe",
-					"price": 9860,
-					"image": ""
+					"price": [20, 0, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -120,13 +139,15 @@
 			"inventory": [
 				{
 					"name": "Edible Dark Mark",
-					"price": 10,
-					"image": ""
+					"price": [0, 0, 10],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "U-No-Poo",
-					"price": 203,
-					"image": ""
+					"price": [0, 7, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -134,53 +155,63 @@
 			"inventory": [
 				{
 					"name": "Exploding Snap",
-					"price": 232,
-					"image": ""
+					"price": [0, 8, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Fanged Frisbee",
-					"price": 348,
-					"image": ""
+					"price": [0, 12, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Reusable Hangman",
-					"price": 435,
-					"image": ""
+					"price": [0, 15, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Self-Shuffling Playing Cards",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Toy Broomstick",
-					"price": 744,
-					"image": ""
+					"price": [1, 8, 19],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Winged Catapult",
-					"price": 348,
-					"image": ""
+					"price": [0, 12, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Starter Wizard's Chess",
-					"price": 92,
-					"image": ""
+					"price": [0, 3, 5],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Basic Wizard's Chess",
-					"price": 493,
-					"image": ""
+					"price": [1, 0, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Standard Wizard's Chess",
-					"price": 2059,
-					"image": ""
+					"price": [4, 3, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Deluxe Wizard's Chess",
-					"price": 4930,
-					"image": ""
+					"price": [10, 0, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		},
@@ -188,48 +219,57 @@
 			"inventory": [
 				{
 					"name": "Dungbomb (4)",
-					"price": 29,
-					"image": ""
+					"price": [0, 1, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Basic Fake Wand",
-					"price": 116,
-					"image": ""
+					"price": [0, 4, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Deluxe Fake Wand",
-					"price": 435,
-					"image": ""
+					"price": [0, 15, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Headless Hat",
-					"price": 986,
-					"image": ""
+					"price": [2, 0, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Punching Telescope",
-					"price": 174,
-					"image": ""
+					"price": [0, 6, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Extendable Ears",
-					"price": 87,
-					"image": ""
+					"price": [0, 3, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Anti-Gravity Hat",
-					"price": 783,
-					"image": ""
+					"price": [1, 10, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Nose Biting Teacup",
-					"price": 232,
-					"image": ""
+					"price": [0, 8, 0],
+					"image": "",
+					"description": ""
 				},
 				{
 					"name": "Portable Swamp",
-					"price": 2958,
-					"image": ""
+					"price": [6, 0, 0],
+					"image": "",
+					"description": ""
 				}
 			]
 		}

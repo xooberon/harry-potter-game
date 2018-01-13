@@ -2,545 +2,767 @@
 	"shop-type": "grid",
 	"inventory": [
 		{
-			"name": "Achievements in Charming"
+			"name": "Achievements in Charming",
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Advanced Potion-Making",
-			"price": 1479,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
-			"name": "Advanced Rune Translation"
+			"name": "Advanced Rune Translation",
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Adventures of Martin Miggs, the Mad Muggle",
-			"price": 0,
-			"image": ""
+			"price": [1, 9, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Ancient Runes Made Easy",
-			"price": 0,
-			"image": ""
+			"price": [1, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Ancient Runes Translation",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "An Anthology of Eighteenth Century Charms",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "An Appraisal of Magical Education in Europe",
-			"price": 0,
-			"image": ""
+			"price": [4, 16, 12],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Armando Dippet: Master or Moron?",
-			"price": 2465,
-			"image": ""
+			"price": [4, 9, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Asiatic Anti-Venoms",
-			"price": 0,
-			"image": ""
+			"price": [2, 5, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Basic Hexes for the Busy and Vexed",
-			"price": 1479,
-			"image": ""
+			"price": [1, 15, 23],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "A Beginner's Guide to Transfiguration",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Blood Brothers: My Life Amongst the Vampires",
-			"price": 0,
-			"image": ""
+			"price": [4, 13, 20],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Book of Potions",
-			"price": 1479,
-			"image": ""
+			"price": [2, 10, 20],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Break with a Banshee",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Broken Balls: When Fortunes Turn Foul",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Charm Your Own Cheese",
-			"price": 0,
-			"image": ""
+			"price": [1, 13, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Common Magical Ailments and Afflictions",
-			"price": 0,
-			"image": ""
+			"price": [2, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "A Compendium of Common Curses and Their Counter-Actions",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Confronting the Faceless",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Curses and Counter-Curses (Bewitch Your Friends and Befuddle Your Enemies with the Latest Revenges: Hair Loss, Jelly-Legs, Tongue-Tying, and Much, Much More",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Dark Arts Outsmarted",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Dark Forces: A Guide to Self-Protection",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Death Omens: What to Do When You Know the Worst is Coming",
-			"price": 0,
-			"image": ""
+			"price": [2, 9, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Defensive Magical Theory",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Dragon Breeding for Pleasure and Profit",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Dragon Species of Great Britain and Ireland",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Dreadful Denizens of the Deep",
-			"price": 0,
-			"image": ""
+			"price": [1, 3, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Dream Oracle",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Dumbledore's Army: The Dark Side of the Demob",
-			"price": 4930,
-			"image": ""
+			"price": [8, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Easy Spells to Fool Muggles",
-			"price": 493,
-			"image": ""
+			"price": [1, 4, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Enchantment in Baking",
-			"price": 0,
-			"image": ""
+			"price": [1, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Encyclopedia of Toadstools",
-			"price": 0,
-			"image": ""
+			"price": [3, 4, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Essential Defence Against the Dark Arts",
-			"price": 0,
-			"image": ""
+			"price": [2, 12, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Fantastic Beasts and Where to Find Them",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Flesh-Eating Trees of the World",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Flying With the Cannons",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Fowl or Foul? A Study of Hippogriff Brutality",
-			"price": 0,
-			"image": ""
+			"price": [1, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "From Egg to Inferno, A Dragon Keeper's Guide",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Gadding with Ghouls",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Gilderoy Lockhart's Guide to Household Pests",
-			"price": 0,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Great Wizarding Events of the Twentieth Century",
-			"price": 0,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Great Wizards of the Twentieth Century",
-			"price": 0,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Guide to Advanced Transfiguration",
-			"price": 0,
-			"image": ""
+			"price": [2, 10, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "A Guide to Medieval Sorcery",
-			"price": 0,
-			"image": ""
+			"price": [2, 6, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Handbook of Do-It-Yourself Broom Care",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Handbook of Hippogriff Psychology",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Healer's Helpmate",
-			"price": 0,
-			"image": ""
+			"price": [2, 16, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "A History of Magic",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Hogwarts: A History",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Holidays with Hags",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Home Life and Social Habits of British Muggles",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Important Modern Magical Discoveries",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Intermediate Transfiguration",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Invisible Book of Invisibility",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Jinxes for the Jinxed",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Life and Lies of Albus Dumbledore",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Madcap Magic for Wacky Warlocks",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magical Drafts and Potions",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magical Hieroglyphs and Logograms",
-			"price": 0,
-			"image": ""
+			"price": [2, 5, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magical Me",
-			"price": 2958,
-			"image": ""
+			"price": [6, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magical Theory",
-			"price": 986,
-			"image": ""
+			"price": [2, 12, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magical Water Plants of the Mediterranean",
-			"price": 0,
-			"image": ""
+			"price": [2, 13, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Magick Most Evile",
-			"price": 0,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Men Who Love Dragons Too Much",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Modern Magical History",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Moste Potente Potions",
-			"price": 0,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Monster Book of Monsters",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "My Life As A Squib",
-			"price": 2465,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Nature's Nobility: A Wizarding Geneology",
-			"price": 0,
-			"image": ""
+			"price": [4, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "New Theory of Numerology",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Notable Magical Names of Our Time",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Numerology and Grammatica",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Official Guide to the Quidditch World Cup",
-			"price": 19227,
-			"image": ""
+			"price": [38, 15, 22],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Olde and Forgotten Bewitchments and Charmes",
-			"price": 0,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "One Minute Feasts - It's Magic!",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "One Thousand Magical Herbs and Fungi",
-			"price": 986,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Powers You Never Knew You Had and What To Do With Them Now You've Wised Up",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Practical Defensive Magic and Its Use Against the Dark Arts",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Predicting the Unpredictable: Insulate Yourself Against Shocks",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Prefects Who Gained Power",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Quidditch Teams of Britain and Ireland",
-			"price": 0,
-			"image": ""
+			"price": [1, 8, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Quidditch Through the Ages",
-			"price": 0,
-			"image": ""
-		},
-		{
-			"name": "The Standard Book of Spells, Grade 1",
-			"price": 493,
-			"image": ""
+			"price": [1, 9, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Quintessence: A Quest",
-			"price": 0,
-			"image": ""
+			"price": [2, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Rise and Fall of the Dark Arts",
-			"price": 0,
-			"image": ""
+			"price": [2, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Rune Dictionary",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Saucy Tricks for Tricky Sorts",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Secrets of the Darkest Arts",
-			"price": 0,
-			"image": ""
+			"price": [3, 4, 16],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Self-Defensive Spellwork",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Sites of Historical Sorcery",
-			"price": 0,
-			"image": ""
+			"price": [2, 10, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Sonnets of a Sorceror",
-			"price": 0,
-			"image": ""
+			"price": [1, 13, 9],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Spellman's Syllabary",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
+		},
+		{
+			"name": "The Standard Book of Spells, Grade 1",
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 2",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 3",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 4",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 5",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 6",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Standard Book of Spells, Grade 7",
-			"price": 493,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "A Study of Recent Developments in Wizardry",
-			"price": 0,
-			"image": ""
+			"price": [2, 15, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "The Tales of Beedle the Bard",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Travels with Trolls",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Twelve Fail-Safe Ways to Charm Witches",
-			"price": 0,
-			"image": ""
+			"price": [1, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Unfogging the Future",
-			"price": 986,
-			"image": ""
+			"price": [2 ,0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Voyages with Vampires",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Wanderings with Werewolves",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Weird Wizarding Dilemmas and Their Solutions",
-			"price": 0,
-			"image": ""
+			"price": [1, 11, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Where There's a Wand, There's a Way",
-			"price": 0,
-			"image": ""
+			"price": [1, 3, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		},
 		{
 			"name": "Year with the Yeti",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": "",
+			"author": ""
 		}
 	]
 }

@@ -3,48 +3,56 @@
 	"inventory": [
 		{
 			"name": "Snowy Owl",
-			"price": 7395,
-			"image": ""
+			"price": [15, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Tawny Owl",
-			"price": 4930,
-			"image": ""
+			"price": [10, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Screech Owl",
-			"price": 7395,
-			"image": ""
+			"price": [15, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Barn Owl",
-			"price": 4930,
-			"image": ""
+			"price": [10, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Brown Owl",
-			"price": 4930,
-			"image": ""
+			"price": [10, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Owl Treats",
-			"price": 116,
-			"image": ""
+			"price": [0, 4, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Small Cage",
-			"price": 986,
+			"price": [2, 0, 0],
 			"image": ""
 		},
 		{
 			"name": "Standard Cage",
-			"price": 1479,
-			"image": ""
+			"price": [3, 0, 0],
+			"image": "",
+			"description": ""
 		},
 		{
 			"name": "Large Cage",
-			"price": 2465,
-			"image": ""
+			"price": [5, 0, 0],
+			"image": "",
+			"description": ""
 		}
 	]
 }

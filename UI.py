@@ -130,12 +130,22 @@ def createShopItemImage(frame, text, image_width, image_height):
     return itemImageLabel
 
 
-def createShopItemLabel(frame, text, text_width, heightInLines):
+def createShopItemLabel(frame, text, price, text_width, heightInLines):
     labelFrame = tk.Frame(frame, background="white")
     nameHeight = heightInLines - 1
     name = createWrappedMessage(labelFrame, text, text_width, nameHeight)
     name.pack()
-    createMessage(labelFrame, "0 G")
+    galleonString = ""
+    sickleString = ""
+    knutString = ""
+    if(price[0] != 0):
+        galleonString = str(price[0]) + "G "
+    if(price[1] != 0):
+        sickleString = str(price[1]) + "S "
+    if(price[2] != 0):
+        knutString = str(price[2]) + "K"
+    priceString = galleonString + sickleString + knutString
+    createMessage(labelFrame, priceString)
     return labelFrame
 
 

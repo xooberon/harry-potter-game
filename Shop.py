@@ -80,10 +80,11 @@ class Shop(tk.Frame):
         start = startIndices[pageNumber]
         for i in range(start, len(inventory)):
             name = inventory[i]["name"]
+            price = inventory[i]["price"]
             column = i % col
             itemImage = UI.createShopItemImage(frame, name, imageSize, imageSize)
             itemImage.grid(row=i // col * 4, column=column)
-            itemLabel = UI.createShopItemLabel(frame, name, itemSize, labelHeight)
+            itemLabel = UI.createShopItemLabel(frame, name, price, itemSize, labelHeight)
             itemLabel.grid(row=i // col * 4 + 1, column=column)
             buttonFrame = tk.Frame(frame, background="white")
             UI.createBuyButton(buttonFrame)
